@@ -70,38 +70,38 @@ A：因为 MicroPython 在我看来可以作为底层的动态 Code 修改的固
 
 ### 1. **准备几个基本设备**
 
-    ![](https://forum.banana-pi.org.cn/uploads/default/original/2X/7/701a545ab3d423851845b746f7cc4c588c36a561.JPG)
+![](https://forum.banana-pi.org.cn/uploads/default/original/2X/7/701a545ab3d423851845b746f7cc4c588c36a561.JPG)
 
-    例如我在用这个[Bpibit](https://github.com/BPI-STEAM/BPI-BIT)，用这个有技术支持，做起来也会比较方便，也有得玩。
+例如我在用这个[Bpibit](https://github.com/BPI-STEAM/BPI-BIT)，用这个有技术支持，做起来也会比较方便，也有得玩。
 
-    - [烧写教程](https://github.com/BPI-STEAM/BPI-BIT-WebDuino/wiki#auto-flash%E5%B7%A5%E5%85%B7)
-    - [配置教程](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/BPI-Bit-Webduino%E8%B6%85%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/BPI-Bit-Webduino%E8%B6%85%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97.md)
-    - [官方网站](https://tutorials.webduino.io/zh-tw/docs/basic/board/bit-information.html)
+- [烧写教程](https://github.com/BPI-STEAM/BPI-BIT-WebDuino/wiki#auto-flash%E5%B7%A5%E5%85%B7)
+- [配置教程](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/BPI-Bit-Webduino%E8%B6%85%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/BPI-Bit-Webduino%E8%B6%85%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97.md)
+- [官方网站](https://tutorials.webduino.io/zh-tw/docs/basic/board/bit-information.html)
 
-    如果不会，可以来看这个视频来体验学习，[BananaPi BPI-BIT学习视频(1)上手](https://www.bilibili.com/video/av28728321)。
+如果不会，可以来看这个视频来体验学习，[BananaPi BPI-BIT学习视频(1)上手](https://www.bilibili.com/video/av28728321)。
 
-    这样你就拥有了物联网的基础设备，为之后控制各种外部硬件做了铺垫，但现在要将它们形成一个网络。
+这样你就拥有了物联网的基础设备，为之后控制各种外部硬件做了铺垫，但现在要将它们形成一个网络。
 
 ### 2. **准备一个无线路由**
 
-    现在我最推荐的是一台手机，自建一个 2.4 Ghz 的网络，然后等到要部署的时候再换一个真正的路由器。
+现在我最推荐的是一台手机，自建一个 2.4 Ghz 的网络，然后等到要部署的时候再换一个真正的路由器。
 
-    由于我比较懒，由于固件默认使用 webduino.io（SSID） / webduino（密码） ，所以我就直接默认的设置了，注意到真正部署的时候，千万不可以这样设置，不安全，容易引起问题，当然自用就无所谓。
+由于我比较懒，由于固件默认使用 webduino.io（SSID） / webduino（密码） ，所以我就直接默认的设置了，注意到真正部署的时候，千万不可以这样设置，不安全，容易引起问题，当然自用就无所谓。
 
-    如我下图所示
+如我下图所示
 
-    ![](image/config.png)
+![](image/config.png)
 
-    这样就可以了，如果有必要再去改，没必要就这样就可以了，接下来就开始我们的物联网开发吧。
+这样就可以了，如果有必要再去改，没必要就这样就可以了，接下来就开始我们的物联网开发吧。
 
 ### 3. **准备一个浏览器**
 
-    基于谷歌的浏览器都可以，比如我用的 QQ浏览器，或者是 360 浏览器，当然我既然要做这个教程的最好的效果， 还是用谷歌浏览器来举例吧，如果你没有，就用我前面提到的几个浏览器，并打开极速模式就好了，一定不能是 IE 浏览器内核的（兼容模式）。
+基于谷歌的浏览器都可以，比如我用的 QQ浏览器，或者是 360 浏览器，当然我既然要做这个教程的最好的效果， 还是用谷歌浏览器来举例吧，如果你没有，就用我前面提到的几个浏览器，并打开极速模式就好了，一定不能是 IE 浏览器内核的（兼容模式）。
 
-    现在材料已经准备完成，开始正题了,进入 [blockly](https://bit.webduino.io/blockly/) 网站。
+现在材料已经准备完成，开始正题了,进入 [blockly](https://bit.webduino.io/blockly/) 网站。
 
-    ![](image/index.png)
+![](image/index.png)
 
-    可以看到我摆了一堆积木来体验，但实际上，我会在接下来的教程里，分离出来，设计更加直接单一的代码，这将而更适合我们开发。
+可以看到我摆了一堆积木来体验，但实际上，我会在接下来的教程里，分离出来，设计更加直接单一的代码，这将而更适合我们开发。
 
 ## [准备工作已经完成，现在点此开始吧](connect.md)。
