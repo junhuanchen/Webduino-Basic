@@ -62,7 +62,7 @@ Q：提到的 WebKit 的容器是指什么？
 
 A：我们可以认为 但凡支持 JavaScript 以及 Websocket 等功能的现代浏览器， 都是我们需要的  WebKit 的容器。
 
-Q：MicroPython 和这个有什么关系？
+Q：MicroPython 在这里有什么用呢？
 
 A：因为 MicroPython 在我看来可以作为底层的动态 Code 修改的固件基础，不需要额外的 OTA 也可以做到需要的升级程序，并且也有足够多的 Python 库作为底层核心的支撑。（最重要的是，我要是做 MicroPython 的底层支持，写起代码比 Arduino C++ 要轻松多了）
 
@@ -72,7 +72,7 @@ A：因为 MicroPython 在我看来可以作为底层的动态 Code 修改的固
 
 ![](https://forum.banana-pi.org.cn/uploads/default/original/2X/7/701a545ab3d423851845b746f7cc4c588c36a561.JPG)
 
-例如我在用这个[Bpibit](https://github.com/BPI-STEAM/BPI-BIT)，用这个有技术支持，做起来也会比较方便，也有得玩。
+例如我在用的这个[Bpibit](https://github.com/BPI-STEAM/BPI-BIT)，用这个有技术支持，做起来也会比较方便，也有得玩。
 
 - [烧写教程](https://github.com/BPI-STEAM/BPI-BIT-WebDuino/wiki#auto-flash%E5%B7%A5%E5%85%B7)
 - [配置教程](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/BPI-Bit-Webduino%E8%B6%85%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/BPI-Bit-Webduino%E8%B6%85%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97.md)
@@ -96,7 +96,7 @@ A：因为 MicroPython 在我看来可以作为底层的动态 Code 修改的固
 
 ### 3. **准备一个浏览器**
 
-基于谷歌的浏览器都可以，比如我用的 QQ浏览器，或者是 360 浏览器，当然我既然要做这个教程的最好的效果， 还是用谷歌浏览器来举例吧，如果你没有，就用我前面提到的几个浏览器，并打开极速模式就好了，一定不能是 IE 浏览器内核的（兼容模式）。
+只要是基于谷歌的浏览器都可以，比如我用的 QQ浏览器，或者是 360 浏览器，当然我既然要做这个教程的最好的效果， 还是用谷歌浏览器来举例吧，如果你没有，就用我前面提到的几个浏览器，并打开极速模式就好了，一定不能是 IE 浏览器内核的（兼容模式）。
 
 现在材料已经准备完成，开始正题了,进入 [blockly](https://bit.webduino.io/blockly/) 网站。
 
@@ -104,4 +104,4 @@ A：因为 MicroPython 在我看来可以作为底层的动态 Code 修改的固
 
 可以看到我摆了一堆积木来体验，但实际上，我会在接下来的教程里，分离出来，设计更加直接单一的代码，这将而更适合我们学习和开发。
 
-## [准备工作已经完成，现在点此开始吧](connect.md)。
+## [准备工作已经完成，现在点此开始吧](https://github.com/junhuanchen/webduino-basic/blob/master/connect.md)。
