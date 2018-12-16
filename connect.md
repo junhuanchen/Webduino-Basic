@@ -248,9 +248,9 @@ board.on('ready', function() {
 
 先通过浏览器的在线编辑器感受一下，如下图。
 
-![]()
+![](image/blockly_websocket.png)
 
-再来，我们通过 NodeJS 代码来看如下示例代码就可以体会到了。
+可以看出它可以在浏览器中同时控制多个板子，再来我们通过 NodeJS 代码来看如下示例代码就可以体会到了。
 
 ```javascript
   board1 = new webduino.Arduino({
@@ -297,12 +297,19 @@ board.on('ready', function() {
 
 这便是完成了一对多的连接模型，借助路由器，我们可以将其连入网络，由浏览器上网获取数据服务，然后下传控制大量硬件，这便是物联网的基础，接下来就是更为复杂的一层，多对多的概念。
 
+但你浏览器必须可以连接到你的板子，所以它是存在一定的局限性的。
+
 ### 多对多
 
 和点对多的时候一样，我们先用浏览器体会一下，但需要注意的是需要网络才能把在线编辑器带回到本地来，记得我们在配置设备的时候，会发现有一个 DeviceID 的参数，表示你板子的 ID ，其中连接就是使用这个方法，这在配置设备联网的时候就会告诉你了，不清楚的可以到这里查看[配置教程](https://github.com/BPI-STEAM/BPI-BIT/blob/master/doc/BPI-Bit-Webduino%E8%B6%85%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/BPI-Bit-Webduino%E8%B6%85%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97.md)。
 
-做一个浏览器的示例，如下图：
+如图获取 DeviceID 将其填入即可。
 
+![](image/device_id.png)
+
+然后做一个浏览器的示例，如下图，与 websocket 几乎没有区别：
+
+![](image/blockly_mqtt.png)
 
 此时板子会自动连入远端的服务器，所以我们在其他地方也可以通过浏览器进行连接和控制，而并不需要与板子同处一个网络，即完成了所谓的多对多了，因为基于此，我们同样给其他人复现这个场景，而点对多的时候，只能自己内部网络测试，无法分享给其他人。
 
@@ -312,5 +319,4 @@ board.on('ready', function() {
 
 但各有各的优点，根据适合的场景来选取适合自己的网络模型吧，至此已经讲完了 webduion-js 的物联网基础模型。
 
-接下来就进入正式的开发部分吧。
-
+接下来就[进入正式的物联网开发](https://github.com/junhuanchen/webduino-basic/blob/master/develop.md)吧。
