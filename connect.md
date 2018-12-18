@@ -22,11 +22,21 @@
 
 连接设备只有两种场景，一种是直接在浏览器上直接连接控制硬件，另一种是拿到代码里去连接控制硬件。
 
-前者需要到 [Webduino Blockly](https://bit.webduino.com.cn/blockly/) 网站里进行访问板子的操作。
+前者需要到 [Webduino Blockly](https://bit.webduino.com.cn/blockly/) 网站里进行访问板子的操作，使用教程都在这里 [Webduino 基礎教學 ](https://tutorials.webduino.io/zh-tw/docs/basic/index.html?utm_source=cloud-blockly&utm_medium=contextMenu&utm_campaign=tutorials)。
 
 后者需要到 NodeJS 通过该插件 [webduino-js](https://github.com/webduinoio/webduino-js) 运行代码，直接进行访问板子的操作。
 
 前者用来给用户或自己体验测试，后者将对其进行开发和拓展，考虑到一些深层次的定制化功能，扩充原本并不存在的功能模块。
+
+### 在浏览器中连接 webduino 硬件
+
+在没有搭建本地运行代码环境的时候，我们只能通过浏览器的形式来连接我们的硬件，连接方法如下截图所示。
+
+![](image/connect.png)
+
+可以看到绿色框中的 1234 ，表示连接参数，但具体的用法，我们将在下面继续讲解。
+
+### 在代码中连接 webduino 板子
 
 从软件层面上看，我们可以知道 webduino-js 是在 JavaScript 的基础上提供了 firmata 协议，用以与硬件程序对接控制协议，未来将迁移至解释器中形成动态硬件控制协议。
 

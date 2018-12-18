@@ -14,7 +14,11 @@
 
 ### 在软件上的亮灯（变换图片）
 
-我们使用
+我们使用这个教程中提到的方法[网页互动 文字、點擊、圖片](https://tutorials.webduino.io/zh-tw/docs/blockly/web/basic-1.html)
+
+做法就比较简单了，就只是纯粹的软件上的变化，效果如下图。
+
+
 
 ## 获取硬件 API 接口
 

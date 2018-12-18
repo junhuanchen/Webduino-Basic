@@ -92,9 +92,9 @@
 
 ### 在 VSCODE 上做 webduino 开发
 
-既然我们可以在浏览器里运行 Webduino 的程序，那么同样的，我们也可以在越过积木，直接在代码中运行程序，从而更加方便的拓展出积木所没有的功能。
+既然我们可以在浏览器里运行 Webduino 的程序，那么同样的，我们也可以直接越过积木，直接在代码中运行程序，从而更加方便的拓展出积木所没有的功能。
 
 它依赖于这个 Js 库 [webduino-js](https://github.com/webduinoio/webduino-js) ，
 具体使用方法我会在下节中演示说明代码，请先学会如何在 VSCODE 中运行代码和使用 Npm 安装依赖库吧。
 
-## [用各种方式连接板子架设物联网吧](https://github.com/junhuanchen/webduino-basic/blob/master/connect.md)
+## [开始用各种方式连接板子架设物联网吧](https://github.com/junhuanchen/webduino-basic/blob/master/connect.md)
