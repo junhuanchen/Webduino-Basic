@@ -44,7 +44,7 @@
 
 ![](image/run_nodejs.png)
 
-而当你在网页上学会了运行 JavaScript 以后，我们就可以开始在 VSCODE 中尝试了。
+而当你在网页上学会了运行 JavaScript 以后，我们就可以开始在 VSCODE 中尝试复现了。
 
 ### 在 VSCODE 上做 JavaScript 开发
 
@@ -68,6 +68,33 @@
 
 当你学会了如何使用 VSCode 运行 HTML 文件，那不妨试试[如何用 VSCODE 直接运行 JavaScript 代码吧](https://jingyan.baidu.com/article/39810a23416c3fb636fda6da.html)。
 
-这便是所谓的 NodeJS 入门了，我想到这里，也许有的人本来就有基础了，看到这里不妨直接进入我们的下一章吧。
+### 在浏览器上做 webduino 开发
+
+在没有开始编写代码之前，我们先通过浏览器的方式来了解一下 Webduino 物联网开发，那么什么是 [webduino-blockly](https://github.com/webduinoio/webduino-blockly) 呢？
+
+如下图，可以看到它其实就是一个在线的积木编辑器，可以给不懂程序的朋友演示程序用，或者自己简单测试用。
+
+![](image/blockly.png)
+
+如果我们点击 JavaScript 的话，就可以看到对应的 JavaScript 代码。
+
+![](image/blockly_code.png)
+
+但这里只能看到代码，并不能编辑，所以我们还可以使用右上角的功能按键，进入一个在线的 Js 编辑器，进行编辑，它会把你当前的代码转移到那边去，如下图操作所示。
+
+![](image/open_online.png)
+
+此时你就会看到一个在线的编辑器了，基于 [JSBin](jsbin.com) 的功能。
+
+![](image/online_editor.png)
+
+上述图片仅供了解一个基本工具，具体怎么操作你还需要到其中去尝试，包括[如何使用在线编辑器](https://tutorials.webduino.io/zh-tw/docs/blockly/index.html)。
+
+### 在 VSCODE 上做 webduino 开发
+
+既然我们可以在浏览器里运行 Webduino 的程序，那么同样的，我们也可以在越过积木，直接在代码中运行程序，从而更加方便的拓展出积木所没有的功能。
+
+它依赖于这个 Js 库 [webduino-js](https://github.com/webduinoio/webduino-js) ，
+具体使用方法我会在下节中演示说明代码，请先学会如何在 VSCODE 中运行代码和使用 Npm 安装依赖库吧。
 
 ## [用各种方式连接板子架设物联网吧](https://github.com/junhuanchen/webduino-basic/blob/master/connect.md)
